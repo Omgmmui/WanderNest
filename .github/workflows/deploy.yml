@@ -1,20 +1,15 @@
-name: Deploy to EC2
+name: Deploy WanderNest
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
       - name: Deploy to EC2
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
@@ -22,5 +17,7 @@ jobs:
           script: |
             cd ~/mmui
             git pull origin main
-            docker-compose down
-            docker-compose up -d --build
+            sudo cp frontend/index.html /var/www/html/index.html
+            docker-compose -f docker-compose.yml up -d --build
+            sudo nginx -s reload
+            echo "Deployed successfully!"
