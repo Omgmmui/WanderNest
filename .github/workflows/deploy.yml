@@ -20,4 +20,4 @@ jobs:
             sudo cp frontend/index.html /var/www/html/index.html
             docker-compose -f docker-compose.yml up -d --build
             sudo nginx -s reload
-            echo "Deployed successfully!"
+            echo "Deployed!"
