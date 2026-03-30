@@ -1,4 +1,5 @@
 version: "3"
+
 services:
   backend:
     build: ./backend
@@ -11,6 +12,7 @@ services:
       DB_USER: root
       DB_PASSWORD: root
       DB_NAME: mmui
+
   db:
     image: mysql:8
     restart: always
