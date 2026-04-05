@@ -218,3 +218,6 @@ MIT License - Feel free to use this project for learning and development.
 ## 👏 Credits
 
 Built with ❤️ using Next.js and Express
+
+## 🚀 Auto-Deploy Ready
+Deployment configured via GitHub Actions.
