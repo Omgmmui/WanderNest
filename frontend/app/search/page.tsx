@@ -62,7 +62,7 @@ function SearchContent() {
   const from = params.get('from') || '';
   const to = params.get('to') || '';
   const date = params.get('date') || '';
-  const type = params.get('type') || 'flights';
+  const type = (params.get('type') || 'flights').toLowerCase();
   
   const [flights, setFlights] = useState<Flight[]>([]);
   const [loading, setLoading] = useState(true);
