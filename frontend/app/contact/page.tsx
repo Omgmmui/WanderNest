@@ -4,45 +4,41 @@ import Link from "next/link";
 export default function ContactPage() {
   return (
     <div style={{
-      background: "#0a0e1a",
+      background: "linear-gradient(135deg, #1e3a5f 0%, #0f172a 50%, #1e293b 100%)",
       minHeight: "100vh",
       padding: "80px 24px"
     }}>
-      <style>{`
-        .card { background: #161d2e; border: 1px solid #2a3a55; border-radius: 16px; padding: 32; }
-        :root { --bg: #0a0e1a; --accent: #f59e0b; --text: #f1f5f9; --muted: #94a3b8; }
-      `}</style>
       <div style={{ maxWidth: 600, margin: "0 auto" }}>
-        <h1 style={{ fontSize: 36, fontWeight: 700, marginBottom: 8, textAlign: "center", color: "white" }}>
+        <h1 style={{ fontSize: 42, fontWeight: 700, marginBottom: 8, textAlign: "center", color: "#fbbf24", fontFamily: "Playfair Display, serif" }}>
           Contact Us
         </h1>
-        <p style={{ color: "#94a3b8", textAlign: "center", marginBottom: 40, fontSize: 16 }}>
+        <p style={{ color: "#cbd5e1", textAlign: "center", marginBottom: 40, fontSize: 16 }}>
           Have questions? We'd love to hear from you!
         </p>
 
-        <div style={{ background: "#161d2e", border: "1px solid #2a3a55", borderRadius: 16, padding: 32 }}>
-          <div style={{ marginBottom: 24 }}>
-            <h3 style={{ fontSize: 14, color: "#f59e0b", marginBottom: 8, textTransform: "uppercase", letterSpacing: 1 }}>Name</h3>
-            <p style={{ fontSize: 18, color: "white" }}>Mohammed Mujahid Ul Islam</p>
+        <div style={{ background: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.2)", borderRadius: 20, padding: 40 }}>
+          <div style={{ marginBottom: 28 }}>
+            <h3 style={{ fontSize: 13, color: "#fbbf24", marginBottom: 10, textTransform: "uppercase", letterSpacing: 2, fontWeight: 600 }}>Name</h3>
+            <p style={{ fontSize: 20, color: "#f8fafc", fontWeight: 500 }}>Mohammed Mujahid Ul Islam</p>
           </div>
 
-          <div style={{ marginBottom: 24 }}>
-            <h3 style={{ fontSize: 14, color: "#f59e0b", marginBottom: 8, textTransform: "uppercase", letterSpacing: 1 }}>Phone</h3>
-            <p style={{ fontSize: 18 }}>
-              <a href="tel:9247247775" style={{ color: "white", textDecoration: "none" }}>9247247775</a>
+          <div style={{ marginBottom: 28 }}>
+            <h3 style={{ fontSize: 13, color: "#fbbf24", marginBottom: 10, textTransform: "uppercase", letterSpacing: 2, fontWeight: 600 }}>Phone</h3>
+            <p style={{ fontSize: 20 }}>
+              <a href="tel:9247247775" style={{ color: "#f8fafc", textDecoration: "none", fontWeight: 500 }}>9247247775</a>
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 28 }}>
+            <h3 style={{ fontSize: 13, color: "#fbbf24", marginBottom: 10, textTransform: "uppercase", letterSpacing: 2, fontWeight: 600 }}>Email</h3>
+            <p style={{ fontSize: 20 }}>
+              <a href="mailto:mohammedmujahidulislam1998@gmail.com" style={{ color: "#f8fafc", textDecoration: "none", fontWeight: 500 }}>mohammedmujahidulislam1998@gmail.com</a>
             </p>
           </div>
 
           <div style={{ marginBottom: 24 }}>
-            <h3 style={{ fontSize: 14, color: "#f59e0b", marginBottom: 8, textTransform: "uppercase", letterSpacing: 1 }}>Email</h3>
-            <p style={{ fontSize: 18 }}>
-              <a href="mailto:mohammedmujahidulislam1998@gmail.com" style={{ color: "white", textDecoration: "none" }}>mohammedmujahidulislam1998@gmail.com</a>
-            </p>
-          </div>
-
-          <div style={{ marginBottom: 24 }}>
-            <h3 style={{ fontSize: 14, color: "#f59e0b", marginBottom: 8, textTransform: "uppercase", letterSpacing: 1 }}>Address</h3>
-            <p style={{ fontSize: 18, lineHeight: 1.6, color: "white" }}>
+            <h3 style={{ fontSize: 13, color: "#fbbf24", marginBottom: 10, textTransform: "uppercase", letterSpacing: 2, fontWeight: 600 }}>Address</h3>
+            <p style={{ fontSize: 18, lineHeight: 1.8, color: "#cbd5e1" }}>
               MO Colony, Bahadurpura<br />
               Hyderabad, Telangana<br />
               500064, India
@@ -50,8 +46,8 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div style={{ textAlign: "center", marginTop: 32 }}>
-          <Link href="/" style={{ color: "#f59e0b", textDecoration: "none" }}>
+        <div style={{ textAlign: "center", marginTop: 36 }}>
+          <Link href="/" style={{ color: "#fbbf24", textDecoration: "none", fontSize: 16, fontWeight: 500 }}>
             ← Back to Home
           </Link>
         </div>
